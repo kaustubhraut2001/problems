@@ -21,7 +21,7 @@ Input: head = [1,2], n = 1
 Output: [1]`
 
 
-`code
+{code
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -52,7 +52,7 @@ public:
 
     return j->next;
     }
-};`
+};}
 
 
 
