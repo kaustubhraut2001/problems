@@ -22,7 +22,7 @@ Output: [1]
 
 
 code
-/**
+</**
  * Definition for singly-linked list.
  * struct ListNode {
  *     int val;
@@ -31,7 +31,7 @@ code
  *     ListNode(int x) : val(x), next(nullptr) {}
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
- */
+ */>
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
@@ -73,7 +73,7 @@ Input: head = [2,1,3,5,6,4,7]
 Output: [2,3,6,7,1,5,4]
 
 code :
-/**
+</**
  * Definition for singly-linked list.
  * struct ListNode {
  *     int val;
@@ -82,7 +82,7 @@ code :
  *     ListNode(int x) : val(x), next(nullptr) {}
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
- */
+ */>
 class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
