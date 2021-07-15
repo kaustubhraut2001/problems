@@ -21,38 +21,33 @@ Input: head = [1,2], n = 1
 Output: [1]`
 
 
-{code
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */`
-class Solution {
-public:
-    ListNode* removeNthFromEnd(ListNode* head, int n) {
-        ListNode* j = new ListNode();
-        j->next = head;
-        ListNode* start = j;
-        ListNode* end = j ;
-        for(int i =1 ;i<=n ;++i){
-            end = end->next;
-        }
-        while(end->next != NULL ){
-        start = start->next;
-        end = end->next;
-
-        }
-
-        start ->next = start->next->next;
-
-    return j->next;
-    }
-};}
+```code\
+Definition for singly-linked list.\
+  struct ListNode {\
+      int val;\
+      ListNode *next;\
+      ListNode() : val(0), next(nullptr) {}\
+      ListNode(int x) : val(x), next(nullptr) {}\
+      ListNode(int x, ListNode *next) : val(x), next(next) {}\
+ };\
+ class Solution {\
+public:\
+    ListNode* removeNthFromEnd(ListNode* head, int n) {\
+        ListNode* j = new ListNode();\
+        j->next = head;\
+        ListNode* start = j;\
+        ListNode* end = j ;\
+        for(int i =1 ;i<=n ;++i){\
+            end = end->next;\
+        }\
+        while(end->next != NULL ){\
+        start = start->next;\
+        end = end->next;\
+        \}
+        start ->next = start->next->next;\
+        \return j->next;
+    }\
+};```
 
 
 
@@ -73,16 +68,16 @@ Input: head = [2,1,3,5,6,4,7]
 Output: [2,3,6,7,1,5,4]
 
 code :
-</**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */>
+
+  Definition for singly-linked list.
+  struct ListNode {
+   int val;
+   ListNode *next;
+   ListNode() : val(0), next(nullptr) {}
+   ListNode(int x) : val(x), next(nullptr) {}
+   ListNode(int x, ListNode *next) : val(x), next(next) {}
+  };
+ />
 class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
